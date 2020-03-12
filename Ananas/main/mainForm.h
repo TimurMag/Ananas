@@ -1,4 +1,5 @@
 #pragma once
+#include "encrypt.h"
 
 namespace main {
 
@@ -34,7 +35,12 @@ namespace main {
 				delete components;
 			}
 		}
-	private: System::Windows::Forms::Button^ button1;
+
+
+
+
+
+
 	protected:
 
 
@@ -51,24 +57,13 @@ namespace main {
 		/// </summary>
 		void InitializeComponent(void)
 		{
-			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->SuspendLayout();
-			// 
-			// button1
-			// 
-			this->button1->Location = System::Drawing::Point(1078, 626);
-			this->button1->Name = L"button1";
-			this->button1->Size = System::Drawing::Size(55, 40);
-			this->button1->TabIndex = 0;
-			this->button1->Text = L"button1";
-			this->button1->UseVisualStyleBackColor = true;
 			// 
 			// mainForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(1145, 677);
-			this->Controls->Add(this->button1);
 			this->Name = L"mainForm";
 			this->Text = L"mainForm";
 			this->ResumeLayout(false);
@@ -76,6 +71,13 @@ namespace main {
 		}
 #pragma endregion
 	private: System::Void splitContainer1_Panel2_Paint(System::Object^ sender, System::Windows::Forms::PaintEventArgs^ e) {
+	}
+	private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
+		result = textNew;
+	}
+	private: System::Void text_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+	}
+	private: System::Void result_TextChanged(System::Object^ sender, System::EventArgs^ e) {
 	}
 	};
 }

@@ -118,9 +118,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="encrypt.cpp" />
     <ClCompile Include="mainForm.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="encrypt.h" />
     <ClInclude Include="mainForm.h">
       <FileType>CppForm</FileType>
     </ClInclude>
