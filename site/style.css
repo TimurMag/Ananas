@@ -1,0 +1,72 @@
+body
+{
+	font-family:  Lucida Sans Unicode;
+	color: white;
+	background-color: #8B0000;
+}
+
+.vse
+{
+	background-color: white;
+}
+
+.name
+{
+    clip-path: polygon(0 0, 100% 0, 100% 87%, 0 100%);
+	background-color: #8B0000;
+	font-size: 100px;
+	text-align: left;
+}
+
+
+.info
+{
+	font-size: 20px;
+	color: #8B0000;
+	font-weight: 600;
+}
+
+.razrab
+{
+	clip-path: polygon(0 13%, 100% 0, 100% 100%, 0 100%);
+	background-color: #8B0000;
+}
+
+.razrab-names
+{
+	font-size: 20px;
+	color: #8B0000;
+}
+
+a
+{
+	transition: 0.5s;
+	text-decoration: none;
+	color: white;
+}
+
+a:hover
+{
+	transition: 0.5s;
+	text-decoration: none;
+	color: white;
+	text-shadow: 0 0 15px black; 
+}
+
+.infoBlock
+{
+	height: 126px;
+	transition: 3s;
+}
+
+.infoBlock:hover
+{
+	transition: 3s;
+	font-size: 25px;
+}
+
+.razrabBlock:hover
+{
+	transition: 3s;
+	font-size: 45px;
+}
