@@ -1,4 +1,6 @@
+#include "RSAForm.h"
 #pragma once
+
 
 namespace ananas {
 
@@ -34,7 +36,9 @@ namespace ananas {
 				delete components;
 			}
 		}
-	private: System::Windows::Forms::Button^ button1;
+	private: System::Windows::Forms::Button^ RSAButton;
+	protected:
+
 	protected:
 	private: System::Windows::Forms::Button^ button2;
 	private: System::Windows::Forms::Button^ button3;
@@ -58,7 +62,7 @@ namespace ananas {
 		/// </summary>
 		void InitializeComponent(void)
 		{
-			this->button1 = (gcnew System::Windows::Forms::Button());
+			this->RSAButton = (gcnew System::Windows::Forms::Button());
 			this->button2 = (gcnew System::Windows::Forms::Button());
 			this->button3 = (gcnew System::Windows::Forms::Button());
 			this->button4 = (gcnew System::Windows::Forms::Button());
@@ -69,14 +73,15 @@ namespace ananas {
 			this->button9 = (gcnew System::Windows::Forms::Button());
 			this->SuspendLayout();
 			// 
-			// button1
+			// RSAButton
 			// 
-			this->button1->Location = System::Drawing::Point(23, 22);
-			this->button1->Name = L"button1";
-			this->button1->Size = System::Drawing::Size(147, 59);
-			this->button1->TabIndex = 0;
-			this->button1->Text = L"RSA";
-			this->button1->UseVisualStyleBackColor = true;
+			this->RSAButton->Location = System::Drawing::Point(23, 22);
+			this->RSAButton->Name = L"RSAButton";
+			this->RSAButton->Size = System::Drawing::Size(147, 59);
+			this->RSAButton->TabIndex = 0;
+			this->RSAButton->Text = L"RSA";
+			this->RSAButton->UseVisualStyleBackColor = true;
+			this->RSAButton->Click += gcnew System::EventHandler(this, &MyForm::RSAButton_Click);
 			// 
 			// button2
 			// 
@@ -163,12 +168,19 @@ namespace ananas {
 			this->Controls->Add(this->button4);
 			this->Controls->Add(this->button3);
 			this->Controls->Add(this->button2);
-			this->Controls->Add(this->button1);
+			this->Controls->Add(this->RSAButton);
 			this->Name = L"MyForm";
-			this->Text = L"MyForm";
+			this->Text = L"Ananas";
 			this->ResumeLayout(false);
 
 		}
 #pragma endregion
-	};
+
+		//ÊÍÎÏÊÀ RSA
+		System::Void MyForm::RSAButton_Click(System::Object^ sender, System::EventArgs^ e)
+		{
+			RSAForm^ f2 = gcnew RSAForm();
+			f2->Show();
+		}
+};
 }
