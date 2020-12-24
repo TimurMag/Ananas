@@ -1,0 +1,4 @@
+C:\Users\srsma\Desktop\ananas\ananas\ananas\x64\Debug\ananas.vcxprojAssemblyReference.cache
+C:\Users\srsma\Desktop\ananas\ananas\ananas\x64\Debug\ananas.MyForm.resources
+C:\Users\srsma\Desktop\ananas\ananas\ananas\x64\Debug\ananas.RSAForm.resources
+C:\Users\srsma\Desktop\ananas\ananas\ananas\x64\Debug\ananas.vcxproj.GenerateResource.cache

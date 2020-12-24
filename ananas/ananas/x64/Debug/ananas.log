@@ -1,0 +1,12 @@
+﻿  MyForm.cpp
+  RSA.cpp
+  NOTE: Use of this header (boost/multiprecision/random.hpp) is deprecated: please use the random number library headers directly.
+C:\Users\srsma\Desktop\ananas\ananas\ananas\RSA.cpp(79,30): warning C4018: '<': signed/unsigned mismatch
+C:\Users\srsma\Desktop\ananas\ananas\ananas\RSA.cpp(89,28): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\srsma\Desktop\ananas\ananas\ananas\RSA.cpp(244,15): warning C4244: 'argument': conversion from 'time_t' to 'const unsigned int', possible loss of data
+  RSAForm.cpp
+  Generating Code...
+C:\Users\srsma\Desktop\ananas\ananas\packages\boost.1.72.0.0\lib\native\include\boost\multiprecision\detail\bitscan.hpp(63): warning C4793: 'boost::multiprecision::detail::find_lsb': function compiled as native:
+  	Found an intrinsic not supported in managed code
+  MyForm.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
+  ananas.vcxproj -> C:\Users\srsma\Desktop\ananas\ananas\x64\Debug\ananas.exe
